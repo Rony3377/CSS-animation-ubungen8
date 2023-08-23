@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>animation übungen</title>
+  </head>
+  <style>
+    /*****main f1,f2,f3,f4*****/
+    main .f-1 {
+      background-image: linear-gradient(
+        rgb(110, 96, 96),
+        rgb(0, 255, 255),
+        rgb(153, 128, 128),
+        rgb(255, 0, 179)
+      );
+      border: rgb(96, 59, 131) solid 2px;
+    }
+    main .f-2 {
+      background-image: linear-gradient(
+        rgb(88, 67, 67),
+        rgb(114, 139, 139),
+        rgb(75, 49, 49),
+        rgb(136, 95, 124)
+      );
+      border: blueviolet solid 2px;
+    }
+    main .f-3 {
+      background-image: linear-gradient(
+        rgb(179, 196, 163),
+        rgb(160, 149, 173),
+        rgb(119, 45, 45),
+        rgb(175, 108, 155)
+      );
+      border: blueviolet solid 2px;
+    }
+    main .f-4 {
+      background-image: linear-gradient(
+        rgb(144, 219, 182),
+        rgb(157, 189, 189),
+        rgb(153, 128, 128),
+        rgb(158, 129, 147)
+      );
+      border: blueviolet solid 2px;
+    }
+    /*****main*****/
+    main {
+      width: 100vh;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+      grid-template-rows: 50vh 50vh;
+    }
+    /*****main div*****/
+    main div {
+      overflow: hidden;
+    }
+    /*****main img*****/
+    main img {
+      width: 100%;
+      animation-name: bild;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+    /*****main img keyfram*****/
+    @keyframes bild {
+      0% {
+        transform: skew(10px, 10px) scale(1) rotate(100deg);
+        filter: sepia(1) brightness(1, 5) hue-rotate(50deg) blur(-1px);
+        rotate: 100deg;
+      }
+      50% {
+        transform: skew(20px, 20px) scale(2) rotate(200deg);
+        filter: sepia(2) brightness(1) hue-rotate(80deg) blur(2px);
+        rotate: 200deg;
+      }
+      100% {
+        transform: skew(30px, 30px) scale(3) rotate(360deg);
+        filter: sepia(3) brightness(-1) hue-rotate(360deg) blur(3px);
+        rotate: 360deg;
+      }
+    }
+    /*****main box1 keyfram*****/
+
+    .box1 {
+      width: 20vw;
+      height: 20vh;
+      animation-name: box1;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      border: blueviolet solid 1px;
+      animation-timing-function: ease;
+    }
+    /*****main box1 keyfram*****/
+    @keyframes box1 {
+      0% {
+        outline: 3px solid black;
+        border-radius: 20%;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+      25% {
+        outline: 3px solid rgb(146, 119, 119);
+        border-radius: 40%;
+        margin-left: 55%;
+        margin-top: 0px;
+      }
+      50% {
+        outline: 3px solid rgb(167, 52, 52);
+        border-radius: 60%;
+        margin-left: 55%;
+        margin-top: 35%;
+      }
+      75% {
+        outline: 3px solid rgb(172, 47, 47);
+        border-radius: 80%;
+        margin-left: 0px;
+        margin-top: 35%;
+      }
+      100% {
+        outline: 3px solid rgb(82, 69, 69);
+        border-radius: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+    }
+    /*****main box2 *****/
+    .box2 {
+      width: 20vw;
+      height: 20vh;
+      animation-name: box2;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      border: rgb(136, 122, 148) solid 1px;
+      animation-timing-function: ease;
+    }
+    /*****main box2 keyfram*****/
+    @keyframes box2 {
+      0% {
+        outline: 3px solid black;
+        border-radius: 20%;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+      25% {
+        outline: 3px solid rgb(146, 119, 119);
+        border-radius: 40%;
+        margin-left: 55%;
+        margin-top: 0px;
+      }
+      50% {
+        outline: 3px solid rgb(167, 52, 52);
+        border-radius: 60%;
+        margin-left: 55%;
+        margin-top: 35%;
+      }
+      75% {
+        outline: 3px solid rgb(172, 47, 47);
+        border-radius: 80%;
+        margin-left: 0px;
+        margin-top: 35%;
+      }
+      100% {
+        outline: 3px solid rgb(82, 69, 69);
+        border-radius: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+    }
+    /*****main box3 *****/
+    .box3 {
+      width: 20vw;
+      height: 20vh;
+      animation-name: box3;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      border: rgb(120, 214, 32) solid 1px;
+      animation-timing-function: ease;
+    }
+    /*****main box3 keyfram*****/
+    @keyframes box3 {
+      0% {
+        outline: 3px solid black;
+        border-radius: 20%;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+      25% {
+        outline: 3px solid rgb(146, 119, 119);
+        border-radius: 40%;
+        margin-left: 55%;
+        margin-top: 0px;
+      }
+      50% {
+        outline: 3px solid rgb(167, 52, 52);
+        border-radius: 60%;
+        margin-left: 55%;
+        margin-top: 35%;
+      }
+      75% {
+        outline: 3px solid rgb(172, 47, 47);
+        border-radius: 80%;
+        margin-left: 0px;
+        margin-top: 35%;
+      }
+      100% {
+        outline: 3px solid rgb(82, 69, 69);
+        border-radius: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+    }
+    /*****main box4 keyfram*****/
+    .box4 {
+      width: 20vw;
+      height: 20vh;
+      animation-name: box4;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      border: rgb(221, 130, 12) solid 1px;
+      animation-timing-function: ease;
+    }
+    /*****main box4 keyfram*****/
+    @keyframes box4 {
+      0% {
+        outline: 3px solid black;
+        border-radius: 20%;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+      25% {
+        outline: 3px solid rgb(146, 119, 119);
+        border-radius: 40%;
+        margin-left: 55%;
+        margin-top: 0px;
+      }
+      50% {
+        outline: 3px solid rgb(167, 52, 52);
+        border-radius: 60%;
+        margin-left: 55%;
+        margin-top: 35%;
+      }
+      75% {
+        outline: 3px solid rgb(172, 47, 47);
+        border-radius: 80%;
+        margin-left: 0px;
+        margin-top: 35%;
+      }
+      100% {
+        outline: 3px solid rgb(82, 69, 69);
+        border-radius: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+    }
+  </style>
+  <body>
+    <main>
+      <div class="f-1">
+        <div class="box1">
+          <img
+            src="https://cdn.fischer.cz/Images/000130/egypt-egypt-marsa-alam-marsa-alam-hilton-nubian-resort-0_1200x0.jpg"
+          />
+        </div>
+      </div>
+      <div class="f-2">
+        <div class="box2">
+          <img
+            src="https://th.bing.com/th/id/R.063142e7e3a2276e441a4b4ca8bac71c?rik=6lSUHKjVziKScw&riu=http%3a%2f%2fwww.scubaverse.com%2fwp-content%2fuploads%2f2014%2f03%2fMarsa-Alam-Crowne-Plaza.jpg&ehk=6EFr6EbNP9NpotUoEaU9vdEhi63qv8aWThnSOh47yj8%3d&risl=&pid=ImgRaw&r=0"
+          />
+        </div>
+      </div>
+      <div class="f-3">
+        <div class="box3">
+          <img
+            src="https://cdn.fischer.cz/Images/000046/marsa-alam-0_1200x0.jpg"
+          />
+        </div>
+      </div>
+      <div class="f-4">
+        <div class="box4">
+          <img
+            src="https://www.aviontourism.com/images/1920-900-fix/32fc5d0e-2157-4449-ab0a-b682c19b3c04"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
